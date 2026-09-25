@@ -1,0 +1,79 @@
+.subscribe {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    /* height: 36px;
+        width: 105px; */
+    padding-left: 16px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-top: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity, 0.15s;
+    vertical-align: top;
+}
+
+.subscribe:hover {
+    opacity: 0.7;
+}
+
+.subscribe:active {
+    opacity: 0.3;
+}
+
+.join {
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 86, 181);
+    border-color: rgb(8, 86, 181);
+    border-style: solid;
+    border-width: 1px;
+    /* height: 36px;
+        width: 75px; */
+    padding-left: 16px;
+    padding-bottom: 9px;
+    padding-right: 16px;
+    padding-top: 9px;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s, color 0.15s;
+    vertical-align: top;
+}
+
+.join:hover {
+    background-color: rgb(8, 86, 181);
+    color: rgb(255, 255, 255);
+}
+
+.join:active {
+    opacity: 0.5;
+}
+
+.tweeter {
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border: none;
+    /* height: 36px;
+        width: 105px; */
+    padding-left: 16px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-top: 10px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+}
+
+.tweeter:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 00.15);
+}
+
+.tweeter:active {
+    color: rgb(29, 161, 242);
+    background-color: white;
+}

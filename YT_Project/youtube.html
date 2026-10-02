@@ -1,24 +1,337 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>youtube.com</title>
-        <style>
-            .thumbnail{
-                width: 300px;
-            }
-            .search-bar{
-                margin-top: 0px;
-            }
-            .search-bar:hover{
-                opacity: 0;
-            }
-            .search-bar:active{
-                opacity: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <img class="thumbnail" src="thumbnails\thumbnail-1.webp">
-        <input class="search-bar" type="textbox" placeholder="Search">
-    </body>
+
+<head>
+    <title>youtube.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        p {
+            font-family: Roboto, Arial;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .thumbnail {
+            width: 300px;
+            display: block;
+        }
+
+        .search-bar {
+            margin-top: 0px;
+            display: block;
+        }
+
+        .video-preview {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 4px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        .thumbnail-row {
+            margin-bottom: 12px;
+        }
+
+        .author {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .channel-pic {
+            display: inline-block;
+            width: 40px;
+            vertical-align: top;
+        }
+
+        .video-info {
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+
+        .video-title {
+            margin-top: 0px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        .video-author {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+            margin-bottom: 4px;
+        }
+
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+        }
+    </style>
+</head>
+
+<body>
+    <input class="search-bar" type="textbox" placeholder="Search">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails\thumbnail-1.webp">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/channel-1.jpeg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="video-author">
+                    Marques Brownlee
+                </p>
+                <p class="video-stats">
+                    3.4M views &#183 6 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail2.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author2.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    STEAL MY PLAN: Complete Web Development Roadmap
+                </p>
+                <p class="video-author">
+                    Harkirat Singh
+                </p>
+                <p class="video-stats">
+                    850K views &#183 1 year ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail3.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author3.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Final Semester | Stand Up Comedy | Tushar Basra
+                </p>
+                <p class="video-author">
+                    Tushar Basra
+                </p>
+                <p class="video-stats">
+                    2.1M views &#183 10 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail4.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author4.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    How to Create ∞ Posts in 60 Minutes using ChatGPT & Claude
+                </p>
+                <p class="video-author">
+                    Iman Gadzhi
+                </p>
+                <p class="video-stats">
+                    1.4M views &#183 4 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail5.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author5.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    The Cycle Is Back — What Devs Should Build in 2026
+                </p>
+                <p class="video-author">
+                    Harkirat Singh
+                </p>
+                <p class="video-stats">
+                    32K views &#183 9 days ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail6.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author6.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Building the AirDesk: The Ultimate Smart Desk
+                </p>
+                <p class="video-author">
+                    HTX Studio
+                </p>
+                <p class="video-stats">
+                    1.2M views &#183 3 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail7.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author7.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Gen Z Won't Travel Like You | WTF is Podcast
+                </p>
+                <p class="video-author">
+                    Nikhil Kamath
+                </p>
+                <p class="video-stats">
+                    3.2M views &#183 1 month ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail8.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author8.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    0 Returns For 30 Months: What You Should Do Now
+                </p>
+                <p class="video-author">
+                    Pranjal Kamra
+                </p>
+                <p class="video-stats">
+                    800K views &#183 2 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail9.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author9.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Jev
+                </p>
+                <p class="video-author">
+                    Harkirat Singh
+                </p>
+                <p class="video-stats">
+                    150K views &#183 1 month ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail10.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author10.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    The Bachelor's Trip
+                </p>
+                <p class="video-author">
+                    The Assttag
+                </p>
+                <p class="video-stats">
+                    400K views &#183 1 year ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail11.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author11.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Island For Drug Money Network
+                </p>
+                <p class="video-author">
+                    Dostcast
+                </p>
+                <p class="video-stats">
+                    350K views &#183 5 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail12.avif">
+        </div>
+        <div>
+            <div class="channel-pic">
+                <img class="author" src="authors/author12.jpg">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    The Rise of BMW | Think School Documentaries
+                </p>
+                <p class="video-author">
+                    Think School
+                </p>
+                <p class="video-stats">
+                   2.4M views &#183 3 weeks ago
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
 </html>

@@ -5,10 +5,30 @@
 
 .video-card-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
 }
+
+@media (max-width : 870px) {
+    .video-card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width : 871px) and (max-width : 1124px){
+    .video-card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width : 1125px) {
+    .video-card-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
 
 .thumbnail-row {
     margin-bottom: 12px;
@@ -16,11 +36,10 @@
 }
 
 .video-time{
-    font-family: Roboto, Arial;
+    position: absolute;
     font-size: 12px;
     font-weight: 500;
     padding: 4px;
-    position: absolute;
     border-radius: 2px;
     background-color: black;
     color: white;

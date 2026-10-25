@@ -50,14 +50,12 @@
     height: 34px;
     flex: 1;
     font-size: 16px;
-    border-style: solid;
-    border-color: rgb(192,192,192);
+    border: 2px solid rgb(192,192,192); /* border-width , border-weight ,border-color*/
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgb(0,0,0,0.05) ;
     width: 0;
 }
 .search-bar::placeholder{
-    font-family: Roboto,Arial;
     padding-left: 10px;
 }
 
@@ -199,10 +197,7 @@
     font-size: 11px;
     font-weight: 500;
     border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding: 2px 5px 2px 5px; /*top right bottom left*/ /* if 2 then vertical horizontal*/
     top: 6px;
     right: 4px;
 }
